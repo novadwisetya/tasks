@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="animate.css">
+    <script src="messageValidation.js"></script>
+
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row" id="topgrid">
+            <div class="col-md-6">
+                <p id="logobar" class="animated rubberBand"><b>Training Bootstrap</b></p>
+            </div>
+            <div class="col-md-6">
+                <div id="navbar">
+                    <span><a href="home.htm" style="text-decoration:none">Home</a></span>
+                    <span><a href="profile.htm" style="text-decoration:none">Profile</a></span>
+                    <span><a href="contact.htm" style="text-decoration:none">Contact</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4" style="margin-top:35px;">
+                <div id="foto-profile">
+                    <p style="font-size:18px;"><b>Riku Kiranatama</b></p>
+                    <img style="width:120px;" src="image/foto.jpg" alt="Riku Kiranatama" class="img-circle">
+                </div>
+            </div>
+            <div class="col-md-8">
+                <form id="formpesan">
+                    <div class="row">
+                        <div class="col-md-3" style="margin-top:35px;">
+                            <p><b>Nama  :</b></p>
+                        </div>
+                        <div class="col-md-7" style="margin-top:35px;">
+                            <input type="text" class="form-control" placeholder="Nama" id="nama" aria-describedby="basic-addon1">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3" style="margin-top:35px;">
+                            <p><b>Email  :</b></p>
+                        </div>
+                        <div class="col-md-7" style="margin-top:35px;">
+                            <input type="text" class="form-control" placeholder="Email " id="email" aria-describedby="basic-addon1">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3" style="margin-top:35px;">
+                            <p><b>Messages  :</b></p>
+                        </div>
+                        <div class="col-md-7" style="margin-top:35px;">
+
+                            <textarea placeholder="Tulis pesan " class="form-control" id="pesan" rows="6"></textarea>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12" style="margin-top:35px;">
+                            <!-- Button trigger modal -->
+                            <button onclick="validate()" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Send</button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                            <h4 class="modal-title" id="myModalLabel">Pesan</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div id="messagesContent">
+                                                <p id="nameModal"></p>
+                                                <p id="emailModal"></p>
+                                                <p id="pesanModal"></p>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

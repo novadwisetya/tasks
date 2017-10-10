@@ -1,0 +1,39 @@
+#navbar a {
+    color: white;
+}
+
+#navbar a:hover {
+    color: teal;
+}
+
+#navbar {
+    float: right;
+}
+
+#topgrid {
+    background-color: coral;
+    color: white;
+    letter-spacing: 3px;
+    padding: 10px;
+    padding-top: 20px;
+}
+
+#navbar span {
+    margin: 10px;
+}
+
+.container {
+    background-color: white;
+}
+
+#contactperson p {
+    margin-left: 50%;
+}
+
+#foto-profile {
+    margin: auto;
+}
+
+#table-profile {
+    margin-top: 35px;
+}
